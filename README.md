@@ -1,7 +1,7 @@
 # GifTastic
 ### A gif generator using GiphyAPI
 
-##Key features
+#Key features
 
 - Click on one of the topics to generate a bunch of GIFS!
 - Enter some text in the text field to add new topics of your choice
