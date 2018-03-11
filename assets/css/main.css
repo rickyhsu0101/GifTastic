@@ -1,0 +1,76 @@
+.card.border-dark{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+h1{
+    font-size: 6em;
+    text-align: center;
+}
+.labelDiv{
+    text-align: center;
+}
+.gifButton{
+    margin: 5px;
+}
+.gifCard{
+    background-color: black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: "Fjalla One";
+    color: white;
+}
+.gifCard .card-footer{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#addButton{
+    width: 100%;
+}
+.modal-content{
+    position: relative;
+}
+.modal-body{
+    padding: 0px;
+    border-bottom:0;
+}
+.modal-body img{
+    width: 100%;
+}
+.modal-header{
+    display: none;
+    border-bottom: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.modal-footer{
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding: 0 0 0 5px;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    border: 0;
+    font-family: "Fjalla One";
+    opacity:0.95;
+    background-color: black;
+}
+.modal-footer h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.close span{
+    color: white;
+    text-shadow: 0px 0px 20px black;
+}
+@media (max-width: 768px) {
+    #addTopic, #addButton{
+        margin-top: 10px;
+    }
+    .labelDiv label{
+        font-size: 1.2rem;
+    }
+}
