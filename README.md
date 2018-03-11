@@ -1,4 +1,5 @@
 # GifTastic
+
 A gif generator using GiphyAPI
 
 ##Key features

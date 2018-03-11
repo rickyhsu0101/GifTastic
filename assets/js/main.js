@@ -102,6 +102,8 @@ $(document).ready(function(){
             });
         }   
     });
+    //used to check if two modals are shown at once
+    var currentAnimatedUrl = "";
     $(document).on("mouseenter", ".gifCard", function(){
         //change image source to animated gif 
         var img = $(this).children("img");
@@ -119,10 +121,20 @@ $(document).ready(function(){
     $(document).on("click", ".gifCard", function(){
         //show the modal after a click on the card
         var animatedUrl = $(this).children("img").attr("data-animate");
+        currentAnimatedUrl = animatedUrl;
         //set slight delay for load
         setTimeout(function(){
             $("[data-src = '"+animatedUrl+"']").modal("show");
-        }, 700);
+        }, 500);
+        //remove all other modal
+        setTimeout(function removePreviousModal(){
+            $(".modal").each(function(){
+                if($(this).attr("data-src")!= currentAnimatedUrl){
+                    $(this).modal("hide");
+                }
+            });
+        }, 1000);
+        
     });
     $(document).on("mouseenter", ".modal-content", function(){
         $(this).children(".modal-footer").slideToggle("fast", function(){
